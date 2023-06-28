@@ -52,9 +52,9 @@ public class ControllerCalc {
     public String getDivision(@RequestParam("num1") int num1, @RequestParam("num2") int num2) {
 
         serviceCalc.getDivision(num1, num2);
-        if (num2 == 0) {
-            return "Деление 0 запрещено";
-        }
+       // if (num2 == 0) {
+       //     return "Деление 0 запрещено";
+       // }
         String result = num1 + " / " + num2 + " = " + serviceCalc.getDivision(num1, num2);
         System.out.println(result);
         return result;
