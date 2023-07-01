@@ -22,4 +22,22 @@ public class ServiceCalcTest {
     public void shouldThrowExceptionDivision0(){
         Assertions.assertThrows(NotNullException.class, () -> serviceCalc.getDivision(5,0));
     }
+    @Test
+    public void shouldReturnSevenSubtraction(){
+        int result = serviceCalc.getSubtraction(4,3);
+
+        Assertions.assertEquals(1,result);
+    }
+    @Test
+    public void shouldReturnSevenMultiplication(){
+        int result = serviceCalc.getMultiplication(4,3);
+
+        Assertions.assertEquals(12,result);
+    }
+    @Test
+    public void shouldReturnSevenDivision(){
+        int result = serviceCalc.getDivision(3,3);
+
+        Assertions.assertEquals(1,result);
+    }
 }
