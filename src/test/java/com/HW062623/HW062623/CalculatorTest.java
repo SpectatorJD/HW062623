@@ -8,6 +8,7 @@ public class CalculatorTest {
 
     @Test
 
+
     void result() {
         assertEquals(5, 2 + 3);
         assertEquals(13, 6 + 7);
@@ -20,9 +21,11 @@ public class CalculatorTest {
         assertEquals(-11, 33 - 44 );
         assertEquals(-36, 20 - 56);
     }
-
     private void assertEquals(int num, int num1) {
     }
+
+
+
 
 }
 
